@@ -24,7 +24,7 @@ public class StreamMethodDemo2 {
 
         // max()
         Optional<Integer> maxNumber = numberList.stream()
-                .min((n1, n2) -> {
+                .max((n1, n2) -> {
                     return n1.compareTo(n2);
                 });
         System.out.println("Max Number in list: " + maxNumber.get());
